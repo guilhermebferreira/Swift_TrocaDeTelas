@@ -22,12 +22,15 @@
                                 <rect key="frame" x="50" y="70" width="38" height="30"/>
                                 <state key="normal" title="tela 2"/>
                                 <connections>
-                                    <segue destination="70d-q2-OaW" kind="show" id="1SO-2k-URN"/>
+                                    <segue destination="70d-q2-OaW" kind="show" identifier="tela2" id="1SO-2k-URN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-h8-JSD">
                                 <rect key="frame" x="50" y="150" width="39" height="30"/>
                                 <state key="normal" title="tela 3"/>
+                                <connections>
+                                    <segue destination="mnR-fX-whd" kind="show" identifier="tela3" id="W4c-jk-xOA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQo-yz-ZD3">
                                 <rect key="frame" x="50" y="230" width="47" height="30"/>
@@ -80,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hc5-bJ-2Pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="118"/>
+            <point key="canvasLocation" x="1099" y="-326"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ic5-xD-ZLa">
@@ -95,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nrf-ha-3Tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="118"/>
+            <point key="canvasLocation" x="1099" y="540"/>
         </scene>
     </scenes>
 </document>
