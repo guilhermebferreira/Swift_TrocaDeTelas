@@ -14,6 +14,10 @@ class ViewController2: UIViewController {
     
     var descricao:String!
     
+    //finaliza a execução da tela 2
+    @IBAction func handleBack(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
