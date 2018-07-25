@@ -14,14 +14,18 @@
  *          - via segue: a segue te dá acesso a referencia da proxima tela.
  *                         porém, como o metodo de segue é o mesmo para todas as telas trocadas,
  *                         é preciso indentificar cada segue no storyboard.
+ *
  *          - via código: chamadaa nova tela é feita através de um action
  *                         o action não possuí a referencia para a proxima tela.
  *                         é preciso criar um identificador para a viewcontroller no storyboard
  *                         e através da referencia para o storyboard solicitar a instancia da proxima tela
+ *                  self.present(proximaTela, animated: true, completion: nil)
+
  *
  *          - "voltar": basta chamar o metodo dismiss na tela chamada
+ *                  self.dismiss(animated: true, completion: nil)
  *
- * 2 -
+ * 2 - TROCA DE TELAS POR VAVIGATION CONTROLL
  *
  ***************************************************/
 
@@ -34,9 +38,13 @@ class ViewController: UIViewController {
     @IBAction func handleTrocaTela(_ sender: UIButton) {
         let proximaTela = self.storyboard?.instantiateViewController(withIdentifier: "tela2") as! ViewController2
         proximaTela.descricao = "AGORA FOI"
-        self.present(proximaTela, animated: true, completion: nil)
+        
+        //alterando para o usar o navigation controller
+        //self.present(proximaTela, animated: true, completion: nil)
+        self.navigationController?.pushViewController(proximaTela, animated: true)
     }
     override func viewDidLoad() {
+        self.title = "Tela principal"
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }

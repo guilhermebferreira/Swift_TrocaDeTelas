@@ -16,9 +16,13 @@ class ViewController2: UIViewController {
     
     //finaliza a execução da tela 2
     @IBAction func handleBack(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        //self.dismiss(animated: true, completion: nil)
+        //não é possivel usar o dismiss utilizando o navigation controller
+        //se a tela foi chamada por push, para voltar é necessário o pop
+        self.navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
+        self.navigationItem.title = "Tela 2"
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
