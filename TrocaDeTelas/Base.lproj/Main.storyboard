@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,89 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrocaDeTelas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lx-CC-bDj">
+                                <rect key="frame" x="50" y="70" width="38" height="30"/>
+                                <state key="normal" title="tela 2"/>
+                                <connections>
+                                    <segue destination="70d-q2-OaW" kind="show" id="1SO-2k-URN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb1-h8-JSD">
+                                <rect key="frame" x="50" y="150" width="39" height="30"/>
+                                <state key="normal" title="tela 3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQo-yz-ZD3">
+                                <rect key="frame" x="50" y="230" width="47" height="30"/>
+                                <state key="normal" title="codigo"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77042179404145084" green="0.75175816656300976" blue="0.76593877934086718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.9860813586421604" green="1" blue="0.96491200201580229" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Lx-CC-bDj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="JJv-3t-fXQ"/>
+                            <constraint firstItem="dQo-yz-ZD3" firstAttribute="top" secondItem="gb1-h8-JSD" secondAttribute="bottom" constant="50" id="NEX-Fg-ck5"/>
+                            <constraint firstItem="gb1-h8-JSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Tuh-Ue-9gc"/>
+                            <constraint firstItem="dQo-yz-ZD3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="bhj-fn-Sj8"/>
+                            <constraint firstItem="8Lx-CC-bDj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="heF-aE-aEo"/>
+                            <constraint firstItem="gb1-h8-JSD" firstAttribute="top" secondItem="8Lx-CC-bDj" secondAttribute="bottom" constant="50" id="u84-Zf-skk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.375" y="31.690140845070424"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="Vzv-F0-b2u">
+            <objects>
+                <viewController id="70d-q2-OaW" customClass="ViewController2" customModule="TrocaDeTelas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="50u-bv-hpf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG2-Fu-bpF">
+                                <rect key="frame" x="0.5" y="80" width="320" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.78964858376457181" blue="0.63652952466811241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UG2-Fu-bpF" firstAttribute="width" secondItem="50u-bv-hpf" secondAttribute="width" id="5TD-8P-e24"/>
+                            <constraint firstItem="UG2-Fu-bpF" firstAttribute="centerX" secondItem="mS6-RM-T9k" secondAttribute="centerX" id="bfa-Fa-LBf"/>
+                            <constraint firstItem="UG2-Fu-bpF" firstAttribute="top" secondItem="mS6-RM-T9k" secondAttribute="top" constant="60" id="oZR-k6-DAP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mS6-RM-T9k"/>
+                    </view>
+                    <connections>
+                        <outlet property="vrLabel" destination="UG2-Fu-bpF" id="rKP-mg-Gvz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hc5-bJ-2Pb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="118"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ic5-xD-ZLa">
+            <objects>
+                <viewController id="mnR-fX-whd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bdI-MJ-dy8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.44782284574861142" blue="0.12308850930541049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="LdB-ma-D9X"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nrf-ha-3Tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857" y="118"/>
         </scene>
     </scenes>
 </document>

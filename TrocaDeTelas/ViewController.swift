@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let proximaTela = segue.destination as! ViewController2
+        
+        proximaTela.descricao = "AGORA VAI"
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
