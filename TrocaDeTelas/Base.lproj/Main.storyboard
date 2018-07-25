@@ -35,6 +35,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQo-yz-ZD3">
                                 <rect key="frame" x="50" y="230" width="47" height="30"/>
                                 <state key="normal" title="codigo"/>
+                                <connections>
+                                    <action selector="handleTrocaTela:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VuU-T7-2cR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.77042179404145084" green="0.75175816656300976" blue="0.76593877934086718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,7 +60,7 @@
         <!--View Controller2-->
         <scene sceneID="Vzv-F0-b2u">
             <objects>
-                <viewController id="70d-q2-OaW" customClass="ViewController2" customModule="TrocaDeTelas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tela2" id="70d-q2-OaW" customClass="ViewController2" customModule="TrocaDeTelas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="50u-bv-hpf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +91,7 @@
         <!--View Controller-->
         <scene sceneID="Ic5-xD-ZLa">
             <objects>
-                <viewController id="mnR-fX-whd" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tela3" id="mnR-fX-whd" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bdI-MJ-dy8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
