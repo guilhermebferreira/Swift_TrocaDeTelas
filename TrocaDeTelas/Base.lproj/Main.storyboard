@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Cardapio-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrocaDeTelas" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,14 +46,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="euK-d3-tgs"/>
+                    <tabBarItem key="tabBarItem" title="Cardapio" image="cardapio" id="euK-d3-tgs"/>
                     <navigationItem key="navigationItem" id="EOw-I2-5eG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="638" y="-544"/>
         </scene>
-        <!--Item-->
+        <!--Perfil-->
         <scene sceneID="Vzv-F0-b2u">
             <objects>
                 <viewController storyboardIdentifier="tela2" id="70d-q2-OaW" customClass="ViewController2" customModule="TrocaDeTelas" customModuleProvider="target" sceneMemberID="viewController">
@@ -84,7 +84,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mS6-RM-T9k"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QDi-dF-G0x"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="perfil" id="QDi-dF-G0x"/>
                     <connections>
                         <outlet property="vrLabel" destination="UG2-Fu-bpF" id="rKP-mg-Gvz"/>
                     </connections>
@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="1408" y="38"/>
         </scene>
-        <!--Item-->
+        <!--Info-->
         <scene sceneID="Ic5-xD-ZLa">
             <objects>
                 <viewController storyboardIdentifier="tela3" id="mnR-fX-whd" sceneMemberID="viewController">
@@ -103,7 +103,7 @@
                         <color key="backgroundColor" red="1" green="0.44782284574861142" blue="0.12308850930541049" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="LdB-ma-D9X"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="p7s-go-YF1"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" id="p7s-go-YF1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nrf-ha-3Tq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,4 +129,9 @@
             <point key="canvasLocation" x="-246" y="39"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cardapio" width="26" height="26"/>
+        <image name="info" width="26" height="26"/>
+        <image name="perfil" width="24" height="24"/>
+    </resources>
 </document>
