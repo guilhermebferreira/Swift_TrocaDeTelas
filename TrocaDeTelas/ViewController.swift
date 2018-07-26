@@ -25,7 +25,16 @@
  *          - "voltar": basta chamar o metodo dismiss na tela chamada
  *                  self.dismiss(animated: true, completion: nil)
  *
- * 2 - TROCA DE TELAS POR VAVIGATION CONTROLL
+ * 2 - TROCA DE TELAS POR PUSH
+ *      - a primeira tela da sequencia deve estar EMBED IN em uma estrutura do tipo NAVIGATION CONTROLLER
+ *          a troca de telas via código deve ser feita a partir da referencia ao navigation controller
+ *          que toda a view controller tem.
+ *          Para chamada de tela deve-se utilizar o comando PUSHVIEWCONTROLLER,
+ *          para a volta o comando POPVIEWCONTROLLER.
+ *
+ *          self.navigationController?.pushViewController(proximaTela, animated: true)
+ *
+ *          self.navigationController?.popViewController(animated: true)
  *
  ***************************************************/
 
